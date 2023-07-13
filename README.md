@@ -2,3 +2,4 @@
 A mock of MS_Paint where you can paint on a terminal grid
 
 commands:
+1
