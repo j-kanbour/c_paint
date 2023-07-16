@@ -20,6 +20,21 @@ int main(void) {
     int canvas[N_ROWS][N_COLS];
 
     clearCanvas(canvas);
+
+    int start;
+    int start_row;
+    int end_row;
+    int start_col;
+    int end_col;
+
+
+    while (scanf("%d", &start) == 1) {
+        
+        //requesting input for two coordinates
+        scanf("%d %d %d %d", &start_row, &start_col, &end_row, &end_col);
+
+        if(start == 1) {}
+        else if(start == 2) {}
     displayCanvas(canvas);
 
     return 0;
