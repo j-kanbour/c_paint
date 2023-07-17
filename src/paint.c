@@ -33,6 +33,33 @@ int main(void) {
         //requesting input for two coordinates
         scanf("%d %d %d %d", &start_row, &start_col, &end_row, &end_col);
 
+        //adjust coordinated if they are out of range
+        if (start_row >= N_ROWS) {
+            start_row = N_ROWS - 1;
+        }
+        if (start_row < 0) {
+            start_row = 0;
+        }
+        if (start_col >= N_COLS) {
+            start_col = N_COLS - 1;
+        }
+        if (start_col < 0) {
+            start_col = 0;
+        }
+
+        if (end_row >= N_ROWS) {
+            end_row = N_ROWS - 1;
+        }
+        if (end_row < 0) {
+            end_row = 0;
+        }
+        if (end_col >= N_COLS) {
+            end_col = N_COLS - 1;
+        }
+        if (end_col < 0) {
+            end_col = 0;
+        }
+
         if(start == 1) {}
         else if(start == 2) {}
     displayCanvas(canvas);
