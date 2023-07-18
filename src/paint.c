@@ -66,6 +66,18 @@ int main(void) {
 
     return 0;
 }
+//used to check that the coordicnates make a straight line
+int invalid(int start_row, int start_col, int end_row, int end_col) {
+
+    if (start_row != end_row && start_col != end_col) {
+        return 0;
+    }
+
+    else {
+        return 1;
+    }
+
+}
 
 // Displays the canvas, by printing the integer value stored in
 // each element of the 2-dimensional canvas array.
