@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// The dimensions of the canvas (20 rows x 36 columns).
+// The test dimensions of the canvas (20 rows x 36 columns).
 #define N_ROWS 20
 #define N_COLS 36
 
