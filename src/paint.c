@@ -60,7 +60,22 @@ int main(void) {
             end_col = 0;
         }
 
-        if(start == 1) {}
+        if(start == 1) {
+            //varticle line going down
+            if (end_row > start_row) {
+                while (start_row <= end_row) {
+                    canvas[start_row][start_col] = BLACK;
+                    start_row ++;
+                }
+            }
+            //varticle line going up
+            else if (end_row < start_row) {
+                while (start_row >= end_row) {
+                    canvas[start_row][start_col] = BLACK;
+                    start_row --;
+                }
+            }
+        }
         else if(start == 2) {}
     displayCanvas(canvas);
 
