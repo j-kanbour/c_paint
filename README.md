@@ -20,3 +20,5 @@ commands:
         1 2 2 2 2 --> DRAW LINE starting at (row 2, col 2) until (row 2, col 2) (A POINT).
 
 more features comming soon...
+
+box fill
