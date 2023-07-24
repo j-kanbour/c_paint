@@ -11,9 +11,9 @@
 //helper functions:
 // Display the canvas.
 void displayCanvas(int canvas[N_ROWS][N_COLS]);
-// Clear the canvas by setting every pixel to be white.
+// Clear the canvas by setting every pixel to white.
 void clearCanvas(int canvas[N_ROWS][N_COLS]);
-//used to check that the coordicnates make a straight line
+//used to check that the coordinates make a straight line
 int invalid(int start_row, int start_col, int end_row, int end_col);
 
 int main(void) {
