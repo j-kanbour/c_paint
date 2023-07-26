@@ -61,8 +61,22 @@ int main(void) {
         }
 
         if(start == 1) {
+            //horoxzontal line going right
+            if (end_col > start_col) {
+                while (start_col <= end_col) {
+                    canvas[start_row][start_col] = BLACK;
+                    start_col ++;
+                }
+            }
+            //horoxzontal line going left
+            else if (end_col < start_col) {
+                while (start_col >= end_col) {
+                    canvas[start_row][start_col] = BLACK;
+                    start_col --;
+                }
+            }
             //varticle line going down
-            if (end_row > start_row) {
+            else if (end_row > start_row) {
                 while (start_row <= end_row) {
                     canvas[start_row][start_col] = BLACK;
                     start_row ++;
@@ -76,7 +90,32 @@ int main(void) {
                 }
             }
         }
-        else if(start == 2) {}
+        else if(start == 2) {
+            if (start_row >= end_row && start_col >= end_col){
+                while (start_row >= end_row) {
+                    int col = 0;
+                    while (start_col >= end_col) {
+                        canvas[start_row][start_col] = BLACK;
+                        start_col --;
+                        col ++;
+                    }
+                    start_row --;
+                    start_col += col;
+                }   
+            }
+            else if (start_row <= end_row && start_col <= end_col){
+                while (start_row <= end_row) {
+                    int col = 0;
+                    while (start_col <= end_col) {
+                        canvas[start_row][start_col] = BLACK;
+                        start_col ++;
+                        col ++;
+                    }
+                    start_row ++;
+                    start_col -= col;
+                }  
+            }
+        }
     displayCanvas(canvas);
 
     return 0;
